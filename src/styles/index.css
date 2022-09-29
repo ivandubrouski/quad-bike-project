@@ -35,7 +35,7 @@ i {
 }
 
 .background-wrapper {
-  background-image: url("src/images/bg-image.png");
+  background-image: url(../images/bg-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,6 +48,7 @@ i {
 }
 
 .header {
+  /* position: fixed; */
   width: 100%;
 }
 
@@ -73,7 +74,7 @@ i {
 .header__item {
   margin-right: 15px;
   color: rgba(255, 255, 255, 1);
-    font-weight: 600;
+  font-weight: 600;
   font-size: 14px;
   line-height: 104.7%;
   text-transform: uppercase;
@@ -150,8 +151,6 @@ i {
   margin-right: 32px;
 }
 
-
-
 /*=============MAIN=================*/
 
 .advantages__item {
@@ -161,19 +160,18 @@ i {
 .advantages__title {
   display: block;
   font-weight: 600;
-font-size: 18px;
-line-height: 108.7%;
-margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 108.7%;
+  margin-bottom: 20px;
 }
 
 .advantages__text {
   display: block;
   font-weight: 300;
-font-size: 14px;
-line-height: 108.7%;
-margin-bottom: 15px;
-rgba(18, 18, 20, 1)
-
+  font-size: 14px;
+  line-height: 108.7%;
+  margin-bottom: 15px;
+  /* rgba(18, 18, 20, 1) */
 }
 
 .advantages__wrapper {
@@ -204,7 +202,6 @@ rgba(18, 18, 20, 1)
   left: -28px;
 }
 
-
 /* h1
 
 .header
@@ -215,19 +212,66 @@ a[href$="https://kyfar"] {
 
 } */
 
-
-.routs__basic__title{
+.routs__basic__title {
   font-weight: 700;
-font-size: 36px;
-line-height: 130%;
-padding-top: 57px ;
-display: block;
-margin: 0 auto;
-padding-bottom: 42px;
-text-align: center;
+  font-size: 36px;
+  line-height: 130%;
+  padding-top: 57px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 42px;
+  text-align: center;
 }
 
-.basic__line{
+.basic__line {
   display: inline;
 }
 
+.routs__info {
+  position: relative;
+  width: 50%;
+  padding-left: 110px;
+}
+
+.routs__wrapper {
+  position: relative;
+}
+
+.routs__section {
+  display: flex;
+}
+
+/* .routs__section_revers {
+  flex-direction: row-reverse;
+} */
+
+.routs__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* inset: 0; */
+  top: -100px;
+  text-align: center;
+}
+
+.routs__info::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 81px;
+  height: 4px;
+  background-color: #037e8c;
+}
+
+.routs__slider {
+  width: 50%;
+  background-color: #037e8c;
+}
+
+.routs__info_revers {
+  display: flex;
+  order: 1;
+}
