@@ -35,7 +35,7 @@ i {
 }
 
 .background-wrapper {
-  background-image: url("src/images/bg-image.png");
+  background-image: url("../images/bg-image.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -86,6 +86,10 @@ i {
 .header__item:last-child {
   margin-right: 0;
 }
+.header__contacts{
+  margin-top: 39px;
+}
+
 
 .header__phone {
   margin-top: 36px;
@@ -144,6 +148,7 @@ i {
   font-weight: 600;
   font-size: 16px;
   line-height: 108.7%;
+  margin-bottom: 192px;
 }
 
 .banner__btn span {
@@ -161,7 +166,7 @@ i {
 .advantages__title {
   display: block;
   font-weight: 600;
-font-size: 18px;
+font-size: 20px;
 line-height: 108.7%;
 margin-bottom: 20px;
 }
@@ -169,7 +174,7 @@ margin-bottom: 20px;
 .advantages__text {
   display: block;
   font-weight: 300;
-font-size: 14px;
+font-size: 16px;
 line-height: 108.7%;
 margin-bottom: 15px;
 color: rgba(18, 18, 20, 1)
@@ -211,23 +216,249 @@ color: rgba(18, 18, 20, 1)
 
 #header
 
-a[href$="https://kyfar"] {
+a[href$="https://kyfar"]  - начинается {
 
 } */
 
 
-.routs__basic__title{
+.routs__wrapper{
+  background: #F4F4F4;
+}
+
+.routs__title{
+  padding-top: 57px;
+  padding-bottom: 57px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+}
+.routs__section{
+  display: flex;
+}
+
+.routs__section_revers{
+  flex-direction: row-reverse;
+}
+
+.routs__info{
+  position: relative;
+  padding-left: 110px;
+  width: 50%;
+  padding-bottom: 57px;
+}
+.routs__info::before{
+  content:'';
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  width: 81px;
+  height: 4px;
+  background-color: rgba(3, 126, 140, 1);
+}
+
+.routs__subtitle{
+  font-weight: 600;
+font-size: 36px;
+line-height: 108.7%;
+}
+
+.routs__price{
+  font-weight: 700;
+font-size: 24px;
+line-height: 108.7%;
+}
+
+.routs__description{
+  padding-top: 32px;
+}
+
+.routs__block{
+  display: flex;
+  justify-content: start;
+  padding-bottom: 10px;
+  
+}
+
+.routs__slider{
+  width: 50%;
+  background-color: blue;
+}
+
+
+
+
+.routs__item{
+  font-weight: 400;
+font-size: 16px;
+line-height: 108.7%;
+text-transform: uppercase;
+padding-left: 17px;
+}
+
+.routs__item-value{
+  font-weight: 400;              /*не применяется*/
+}
+
+.routes__notice{
+  display: flex;
+  padding-top: 22px;
+}
+
+.routes__text{
+  font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+padding-right: 20px;
+}
+
+.routs__plan{
+  font-weight: 400;
+font-size: 14px;
+line-height: 160%;
+padding-top: 13px;
+}
+
+
+.routs__buttons{
+  padding-top: 39px;
+  display: flex;
+}
+
+.routs__more{
+  width: 175px;
+  height: 45px;
+  border: 1.5px solid #037E8C;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #037E8C;
+  margin-right: 15px;
+
+}
+
+
+.routs__reserve{
+  width: 175px;
+height: 45px;
+  background: #037E8C;
+border-radius: 9px;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+color: #FFFFFF;
+}
+
+
+.help__wrapper{
+  background: grey;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.help__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.help__text{
+  text-align: center;
+  padding-top: 19px;
+}
+
+.help__button{
+  padding-bottom: 50px;
+  padding-top: 43px;
+}
+
+.help__btn{
+  width: 175px;
+  height: 45px;
+  background: #037E8C;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #110101;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.photo{
+  border: 2px solid green;
+}
+.photo__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  color: #121214;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.photo__slider{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/*                VIDEO              */
+
+.video__wrapper{
+  background-image: url("../images/video\ wrapper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 82px 181px;
+}
+
+.video__content{
+  width: 1078px;
+height: 430px;
+margin: 0 auto;
+}
+
+
+/*=============== TEAM ================ */
+
+.team__title{
   font-weight: 700;
 font-size: 36px;
 line-height: 130%;
-padding-top: 57px ;
-display: block;
-margin: 0 auto;
-padding-bottom: 42px;
+color: #121214;
+padding-top: 64px;
+padding-bottom: 33px;
 text-align: center;
 }
 
-.basic__line{
-  display: inline;
+.team__group{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 64px;
 }
 
+.team__name{
+  font-weight: 700;
+font-size: 24px;
+line-height: 130%;
+color: #037E8C;
+padding-top: 17px;
+padding-left: 26px;
+}
+
+.team__position{
+  font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+color: #121214;
+padding-bottom: 22px;
+padding-left: 26px;
+
+}
