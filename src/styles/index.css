@@ -1,5 +1,5 @@
 * {
-  color: black;
+  color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
@@ -33,6 +33,15 @@ i {
   font-style: normal;
   margin: 0;
 }
+
+/*.slider__pagination{
+  display: flex;
+
+}
+
+.slider__item{
+
+}*/
 
 .background-wrapper {
   background-image: url("../images/bg-image.png");
@@ -144,7 +153,6 @@ i {
   height: 55px;
   background: #037e8c;
   border-radius: 9px;
-  color: #ffffff;
   font-weight: 600;
   font-size: 16px;
   line-height: 108.7%;
@@ -153,6 +161,7 @@ i {
 
 .banner__btn span {
   margin-right: 32px;
+  color: #ffffff;
 }
 
 
@@ -350,6 +359,7 @@ line-height: 130%;
 color: #FFFFFF;
 }
 
+/*===================== HELP ==============*/
 
 .help__wrapper{
   background: grey;
@@ -368,6 +378,11 @@ color: #FFFFFF;
 .help__text{
   text-align: center;
   padding-top: 19px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+
 }
 
 .help__button{
@@ -383,16 +398,22 @@ color: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
   line-height: 130%;
-  color: #110101;
+  color:#FFFFFF;
   display: block;
   margin: 0 auto;
+ }
 
-}
 
+/*=================== PHOTO =====================*/
 
 .photo{
   border: 2px solid green;
 }
+
+.photo__wrapper{
+  padding-bottom: 130px;
+}
+
 .photo__title{
   font-weight: 700;
   font-size: 36px;
@@ -409,6 +430,8 @@ color: #FFFFFF;
 }
 
 
+
+
 /*                VIDEO              */
 
 .video__wrapper{
@@ -423,6 +446,8 @@ color: #FFFFFF;
   width: 1078px;
 height: 430px;
 margin: 0 auto;
+border: 7px solid #FFFFFF;
+border-radius: 22px;
 }
 
 
@@ -461,4 +486,158 @@ color: #121214;
 padding-bottom: 22px;
 padding-left: 26px;
 
+}
+
+/*===========================CONDITIONS=================*/
+
+.conditions{
+  background-image: url("../images/bg\ conditions.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.conditions__title{
+  width: 500px;
+  height: 94px;
+  margin: 0 auto;
+  
+}
+
+.conditions__text{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  text-align: center;
+  color: #121214;
+  padding-top: 50px;
+  padding-bottom: 43px;
+
+}
+
+
+.conditions__group{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 52px;
+
+}
+
+
+.conditions__card{
+  background-color: #FFFFFF;
+  border-radius: 9px;
+  
+  width: calc(33% - 60px);
+  display: flex;
+  justify-content: flex-start;
+  align-items:start;
+
+}
+
+
+.conditons__icon{
+  padding-top: 9px;
+  padding-left: 5px;
+}
+
+.conditions__description{
+  padding: 9px  27px 14px 42px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+
+/*==================== SUGGESTION ==========*/
+.suggestion__wrapper{
+  border:1px  solid green;
+  padding: 64px 70px 75px 70px;
+}
+
+.suggestion__title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 130%;
+text-align: center;
+color: #373737;
+padding-bottom: 45px;
+
+}
+
+.suggestion__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestion__card{
+  display: flex;
+  width: calc(50% - 29px);
+  background: #F4F4F4;
+  border-radius: 9px;
+  background-image: url("../images/suggestion\ bg.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  
+}
+
+.suggestion__item{
+  width: 50%;
+
+}
+
+.suggestion__image{
+  border-radius: 9px;
+}
+
+.suggestion__text{
+  width: 50%;
+}
+
+.suggestion__subtitle{
+  font-weight: 800;
+font-size: 36px;
+line-height: 139%;
+color: #037E8C;
+margin-top: 26px;
+}
+
+.suggestion__description{
+  font-weight: 400;
+font-size: 18px;
+line-height: 130%;
+color: #373737;
+margin-top: 15px;
+}
+
+
+.suggestion__btn{
+  border: 1.5px solid #037E8C;
+border-radius: 9px;
+width: 175px;
+height: 45px;
+font-weight: 600;
+font-size: 14px;
+line-height: 130%;
+color: #037E8C;
+}
+
+.suggestion__more{
+  margin-top: 20px;
+}
+
+
+/*=================== certificate =========*/
+.certificate__wrapper{
+  padding-top: 50px ;
+  padding-bottom: 90px;
+
+}
+
+.certificate__title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 140.4%;
+text-align: center;
+margin-bottom: 13px;;
 }
