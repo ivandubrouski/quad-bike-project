@@ -289,6 +289,7 @@
         </div>
       </section>
       <section class="photo">
+        <!-- add div class container -->
         <div class="photo__wrapper">
           <h2 class="photo__title">Фото</h2>
           <div class="photo__slider">
@@ -304,14 +305,14 @@
           </div>
           <!--
             <div class="slider__pagination">
-            <div class="slider__points">
-              <div class="slider__item"></div>
-              <div class="slider__item"></div>
-              <div class="slider__item"></div>
-            </div>
-            <div>
+              <div class="slider__bullet">
+                <div class="slider__item"></div>
+                <div class="slider__item"></div>
+                <div class="slider__item"></div>
+              </div>
+            <span class="slider__score">
               scroll
-            </div>
+            </span>
           </div>
         -->
         </div>
@@ -319,9 +320,11 @@
       <section class="video">
         <div class="video__wrapper">
           <div class="video__content">
-            <video poster="src/images/video preview.jpeg">
+            <iframe width="840" height="415" src="https://www.youtube.com/embed/aPfd6-4F1xU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <video poster="src/images/video preview.jpeg">
               <source src="https://www.youtube.com/watch?v=aTeRVgt9ygU" type="video/mp4">
-            </video>
+            </video> -->
+            <!-- <video src="./src/video/video.mp4" controls autoplay></video> -->
           </div>
         </div>
       </section>
@@ -331,29 +334,37 @@
             <h2 class="team__title">Наша команда</h2>
             <div class="team__group">
               <div class="team__member">
-                <img src="src/images/team1.jpg" alt="">
-                    <div class="team__name">Юлиана</div>
+                  <div class="team__img">
+                    <img src="src/images/team1.jpg" alt="">
+                  </div>
+                  <div class="team__name">Юлиана</div>
                   <div class="team__position">руководитель</div>                                
               </div>
               <div class="team__member">
+                <div class="team__img">
                 <img src="src/images/team2.jpg" alt="">
+              </div>
                 <div class="team__name">Максим</div>
                 <div class="team__position">старший инструктор</div>
               </div>
               <div class="team__member">
+                <div class="team__img">
                 <img src="src/images/team3.jpg" alt="">
+              </div>
                 <div class="team__name">Кристина</div>
                 <div class="team__position">администратор</div>
               </div>
               <div class="team__member">
-                <img src="src/images/team4.jpg" alt="">
+                <div class="team__img">
+                  <img src="src/images/team4.jpg" alt="">
+                </div>
                 <div class="team__name">Юрий</div>
                 <div class="team__position">старший механик</div>
               </div>
             </div>          
           </div>        
       </section>
-      <sectiion class="conditions">
+      <section class="conditions">
         <div class="container">
           <div class="conditions__wrapper">
             <div class="conditions__title">
@@ -400,7 +411,7 @@
 
           </div>          
         </div>
-      </sectiion>
+      </section>
       <sectiion class="suggestion">
         <div class="suggestion__wrapper">
           <h2 class="suggestion__title">Спецпредложения</h2>
@@ -411,10 +422,7 @@
                 <img class="suggestion__image" src="src/images/suggestion1.jpg" alt="">
               </div>
               <div class="suggestion__text">
-                <div class="suggestion__subtitle">
-                  <p>Скидка 10%</p>
-                  <p>на День Рождение</p>                              
-                </div>
+                <p class="suggestion__subtitle"><span class="suggestion__subtitle-bold">Скидка 10%</span> на День Рождение</p>                              
                 <div class="suggestion__description">в честь Дня Рождения - дарим
                   имениннику скидку 10%
                 </div>
@@ -422,21 +430,17 @@
             </div>
 
             <div class="suggestion__card">
-              <div class="suggestion__item">
-                <div class="suggestion__image">
-                  <img src="src/images/suggestion2.jpg" alt="">
-                </div>
+              <div class="suggestion__image">
+                <img src="src/images/suggestion2.jpg" alt="">
               </div>                           
-              <div class="suggestion__text">
-                <div class="suggestion__subtitle">
-                  <p>Скидка 10%</p>
-                </div>
-                <div class="suggestion__description">клиентам Ex-Kuban на услуги
+              <div class="suggestion__desc">
+                <h3 class="suggestion__subtitle">Скидка 10%</h3>
+                <p class="suggestion__text">клиентам Ex-Kuban на услуги
                    Загородного клуба Ягода Малина
-                </div>
-                <div class="suggestion__more">
-                  <button class="suggestion__btn">Подробнее</button>
-                </div>
+                </p>
+                <!-- <div class="suggestion__more"> -->
+                <button class="suggestion__btn">Подробнее</button>
+                <!-- </div> -->
               </div>
           </div>
         </div>
