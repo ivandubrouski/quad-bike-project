@@ -1,6 +1,6 @@
 // var - глобальная изменяемая (подьем/всплытие) - не юзать!
 // const - локальная неизменяемая
-// let - локальная изменяемая
+// let - локальная изменяемая (не всплывает)
 
 // var a = 13;
 // const b = 14;
@@ -15,10 +15,11 @@
 //number
 //string
 //boolean
-//object
 //null
 //NaN
 //undefined
+
+//object
 //bigInt - редкий
 //submol - редкий
 
@@ -40,9 +41,12 @@
 
 // const newNumb = '132';
 
+//преобразование строки в число!
+
 // const currentNumber = Number(newNumb);
 // const currentNumber = +newNumb;
 
+// преобразование числа в строку!!
 // const newStr = 132 + ''; // '132'
 
 // 0, '', null, undefined, NaN === false;
@@ -62,14 +66,18 @@
 // const num = 5.5555;
 // // number = 5, 10;
 // // float = 2.55
-// num.toFixed(2);
+// num.toFixed(); // откидывает дробную часть (без правил округления)
+// num.toFixed(2); // оставляет 2 цифры после запятой
+//
+// Math.round(num); // округление по правилам матем
+// Math.floor; // окргугление к меньшему floor - пол
+// Math.ceil(); // округление к бОльшему ceil - потолок
 
-// Math.round(num);
-// Math.floor;
-// Math.ceil();
+// const str = "qweqweqwe";
+// const str2 = str; // если поменять str, то str2 не поменяется!!
 
 // const obj = {
-//   value: "gegrwegwe",
+//    value: "gegrwegwe",
 // };
 // // объекты в отличие от примитивов копируются по ссылке, те newObj - это просто ссылка на obj
 // const newObj = obj;
@@ -77,12 +85,16 @@
 // console.log(str.toLocaleLowerCase());
 // console.log(obj.value);
 
-// const sum = 0.1 + 0.2;
+// const sum = 0.1 + 0.2; // 0.30000000000000004 Признанный баг!! помнить об этом
 
 // console.log(sum.toFixed(1));
 
-// const newSum = sum + '';
-// const a = +newSum;
+// const newSum = sum + ''; // число преобразовать в строку!!
+// const a = +newSum; // строку преобразовать в число!!
+
+
+
+// массив по сути - обьект
 
 // const array = [5, 2, 7, false, "dddd", { a: "hu" }];
 
@@ -97,16 +109,16 @@
 //   a: "a",
 // };
 
-// array[2];
+// array[2]; // массив по сути - обьект
 // obj[a];
 
-// // const num = new Number(2);
+// // const num = new Number(2); // так делать нельзя, уже устарело, ест много памяти
 // // const array = new Array(2);
 
-// array.push("a");
+// array.push("a"); 
 // const a = array.pop(5);
 
-// array.shift();
+// array.shift();  // лучше не пользоваться, т.к. идет перезапись ячеек памяти
 // array.unshift();
 
 // // FIFO --------------- LIFO
@@ -127,7 +139,7 @@
 
 // const a = [['ss', 3], ['ss', 3], ['ss', ['ss', ['ss', 3]]]];
 
-// a.flat(1); //[]
+// a.flat(1); //[] //!!! важный метод!! возвращает все уровни вложенности в 1 массив
 
 // const array = [5, 2, undefined, false, "dddd", { a: "hu" }];
 
@@ -135,7 +147,7 @@
 //   console.log(array[i]);
 // }
 
-// array.forEach((_, index) => {
+// array.forEach((_, index) => {  // можно использовать _ вместо item, это не важно
 //   console.log(index);
 // });
 
@@ -178,15 +190,20 @@
 //   return item.salary > 10000;
 // }); // 1
 
-const numberArray = [1, 16550, 5, 11, 88, 77];
-const strArray = ["afwef", "s", "Awefwef", "Befw"];
+// const numberArray = [1, 16550, 5, 11, 88, 77];
+// const strArray = ["afwef", "s", "Awefwef", "Befw"];
 
 // const newNumber = numberArray.sort(); //[1, 11, 16550, 5, 77, 88]
-const newNumber = numberArray.sort((a, b) => a - b); //[1, 11, 16550, 5, 77, 88]
+// поэтому небходимо использовать (a, b) => a - b
+// const newNumber = numberArray.sort((a, b) => a - b); //[1, 11, 16550, 5, 77, 88]
 
-const newStr = strArray.sort(
-  (a, b) => a.toLocaleLowerCase() - b.toLocaleLowerCase()
-);
 
-console.log(newNumber);
-console.log(newStr);
+// const newStr = strArray.sort(); //['Awefwef', 'Befw', 'afwef', 's']
+// поэтому небходимо использовать (a, b) => a.toLocaleLowerCase() - b.toLocaleLowerCase()
+
+// const newStr = strArray.sort(
+//   (a, b) => a.toLocaleLowerCase() - b.toLocaleLowerCase()
+// );
+
+// console.log(newNumber);
+// console.log(newStr);

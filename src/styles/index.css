@@ -65,9 +65,6 @@ i {
   justify-content: space-between;
 }
 
-.header__logo {
-  margin-left: 70px;
-}
 
 .header__info {
   display: flex;
