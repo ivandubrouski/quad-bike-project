@@ -92,8 +92,6 @@
 // const newSum = sum + ''; // число преобразовать в строку!!
 // const a = +newSum; // строку преобразовать в число!!
 
-
-
 // массив по сути - обьект
 
 // const array = [5, 2, 7, false, "dddd", { a: "hu" }];
@@ -115,7 +113,7 @@
 // // const num = new Number(2); // так делать нельзя, уже устарело, ест много памяти
 // // const array = new Array(2);
 
-// array.push("a"); 
+// array.push("a");
 // const a = array.pop(5);
 
 // array.shift();  // лучше не пользоваться, т.к. идет перезапись ячеек памяти
@@ -197,7 +195,6 @@
 // поэтому небходимо использовать (a, b) => a - b
 // const newNumber = numberArray.sort((a, b) => a - b); //[1, 11, 16550, 5, 77, 88]
 
-
 // const newStr = strArray.sort(); //['Awefwef', 'Befw', 'afwef', 's']
 // поэтому небходимо использовать (a, b) => a.toLocaleLowerCase() - b.toLocaleLowerCase()
 
@@ -207,3 +204,43 @@
 
 // console.log(newNumber);
 // console.log(newStr);
+
+const a = [1, 2, 3, 4];
+
+const b = a.reduce((result, item, inde, array) => {
+  // result = 0; // 1 // {}
+  // const sum = result + item;
+  // return result + item;
+  result[item] = index;
+
+  return result;
+}, {});
+
+// b === {
+//   1: '1',
+//   2: '2',
+// }
+
+const obj = {
+  aaa: "111111",
+  bbb: "222222",
+};
+
+Object.keys(obj); // ['aaa', 'bbb'];
+Object.values(obj); // значения
+
+Object.entries(obj); //[['aaa', '11111'], ['bbb', '2222']].map(item = item[1]);
+
+const c = [
+  ["Aaa", "11111"],
+  ["Bbb", "2222"],
+];
+Object.fromEntries(c); // {Aaa: '1111', ...}
+
+const c = ["a", "b", "c", "a"];
+
+const f = new Set(c); //{'a', 'b', 'c'};
+
+const g = Array.from(f); //['a', 'b', 'c'];
+
+// new Map
