@@ -1,0 +1,40 @@
+
+const a = [1, 2, 3, 4];
+
+const b = a.reduce((result, item, index, array) => {
+  // result = 0; // 1 // {}
+  // const sum = result + item;
+  // return result + item;
+  result[item] = index;
+
+  return result;
+}, {});
+
+// b === {
+//   1: '1',
+//   2: '2',
+// }
+
+// const obj = {
+//   aaa: "111111",
+//   bbb: "222222",
+// };
+
+Object.keys(obj); // ['aaa', 'bbb'];// выводит ключи в массив
+Object.values(obj); // значения // выводит значения в массив
+
+Object.entries(obj); //[['aaa', '11111'], ['bbb', '2222']].map(item = item[1]);
+
+const c = [
+  ["Aaa", "11111"],
+  ["Bbb", "2222"],
+];
+Object.fromEntries(c); // {Aaa: '1111', ...}
+
+const c = ["a", "b", "c", "a"];
+
+const f = new Set(c); //{'a', 'b', 'c'};
+
+const g = Array.from(f); //['a', 'b', 'c'];
+
+// new Map
