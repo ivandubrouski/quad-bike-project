@@ -1,0 +1,67 @@
+// document
+// window
+
+// const body = document.body;
+
+//parentElement
+//childElementNodes
+//firstElementChild
+//lastElementChild
+// previousElementSibling
+//nextElementSibling
+
+// const background = body.firstElementChild;
+
+// const main = background.nextElementSibling;
+
+// const logo = document.getElementById('logo');
+// const header = document.getElementsByClassName('header');
+// const header = document.getElementsByTagName('header');
+// const nav = document.querySelector('nav'); //[].find => сам объект
+// '#nav'
+// '.nav'
+// '[data-test-id="nav"]'
+// '[href^="http://google.com"]'
+
+// const nav = document.querySelectorAll('[data-test-id="nav"]'); //[].filter => массив объектоов
+
+// const way = document.querySelector('.header__item a');
+//
+// way.outerHTML += '<span class="jjj">Ghbdtn</span>';way.innerHTML += '<script class="jjj">jrefkerfjfrefrjnerjfjefe</script>';
+// way.textContent += ' ekmed';
+
+// const button = document.querySelector('.header__call');
+// const modal = document.querySelector('.modal');
+// const close = document.querySelector('.modal__close');
+
+
+
+
+// button.addEventListener('click', () => {
+   // link.style.display = 'none';
+   // link.textContent = 'Hello';
+
+  // if (link.classList.contains('white')) {
+  //     link.classList.remove('white');
+  // } else {
+  //     link.classList.add('white');
+  // }
+
+    // link.classList.toggle('white');
+
+//     modal.classList.add('show');
+//     document.body.classList.add('no-scroll');
+// });
+
+// close.addEventListener('click', () => {
+//     document.body.classList.remove('no-scroll');
+//     modal.classList.remove('show');
+// })
+
+// close.removeEventListener('click', () => {
+//     modal.classList.remove('show');
+//     document.body.classList.remove('no-scroll');
+// })
+
+
+

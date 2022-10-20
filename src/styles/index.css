@@ -7,9 +7,9 @@ body {
   margin: 0;
 }
 
-.no-scroll {
+/*.no-scroll {
   overflow-y: hidden;
-}
+}*/
 
 ul,
 ol {
@@ -688,6 +688,7 @@ a[href$="https://kyfar"]  - начинается {
   height: 479px;
   background: #ffffff;
   border-radius: 9px;
+  position: relative;
 }
 
 .modal__area {
@@ -707,6 +708,7 @@ a[href$="https://kyfar"]  - начинается {
 }
 
 .modal__subtitle {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -715,6 +717,7 @@ a[href$="https://kyfar"]  - начинается {
 }
 
 .modal__input {
+  display: block;
   width: 350px;
   height: 46px;
   background: #ffffff;
@@ -741,22 +744,100 @@ a[href$="https://kyfar"]  - начинается {
 
 .modal__close {
   position: absolute;
-  right: 18.88%;
-  top: 18.88%;
+  right: -50px;
+  top: -50px;
 }
 
 .show {
   display: flex;
 }
 
-.modal__input:nth-child(4) {
-  background-color: dodgerblue;
+/**************************** QUESTIONS ******************************/
+
+.questions{
+  background-image: url("../images/questions_spring.png");
+  background-repeat: no-repeat;
+  background-position: left -150px;
+  border: 1px solid blueviolet;
+} 
+
+.questions__wrapper{
+  background-image: url("../images/questions_buggi.png");
+  background-repeat: no-repeat;
+  background-position: right -150px;
+  
 }
 
+.questions__title{
+  padding-top: 71px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140.4%;
+  text-align: center;
+}
+
+.questions__section{
+  display: flex;
+}
+
+.questions__tabs{
+  width: 50%;
+}
+
+.questions__ask{
+  width: 50%;
+}
+
+.questions_image{
+  text-align: center;
+}
+
+.questions__subtitle{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #121214;
+  margin-top: 26px;
+  margin-bottom: 14px;
+}
+
+.questions__text{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.questions__btn{
+  display: block;
+  margin: 0 auto;
+  margin-top: 31px;
+  width: 175px;
+  height: 45px;
+  background: #037E8C;
+  border-radius: 9px;
+  border-style: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #FFFFFF;
+
+}
+
+
+
+
+
+/**************************** TABS ******************************/
 .tabs__item {
-  width: 300px;
-  border: 2px solid red;
-  margin: 10px;
+  border: 0.5px solid #037E8C;
+  border-radius: 2px;
+  margin: 8px;
 }
 
 .tabs__content {
@@ -786,6 +867,23 @@ a[href$="https://kyfar"]  - начинается {
 
 .tabs__content_show::after {
   transform: rotate(-45deg);
+}
+
+.tabs__subtitle{
+  padding: 17px 23px 24px 23px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #121214;
+}
+
+
+.tabs__text{
+  font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #121214;
+padding: 0 31px 16px 21px;
 }
 
 @media (max-width: 992px) {
@@ -858,4 +956,48 @@ a[href$="https://kyfar"]  - начинается {
     letter-spacing: 0.02em;
     border: none;
   } */
+}
+
+
+
+/************************** OFFERS ********************/
+
+.offers__title{
+  margin-top: 85px;
+  margin-bottom: 55px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140.4%;
+  color: #121214;
+  text-align: center;
+}
+
+
+.offers__list{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.offers__item{  
+  border-radius: 9px;
+  width: calc(25% - 90px);
+}
+
+.offers__descrip{
+  background: #8d8c8c;
+  padding: 25px;
+}
+
+
+
+.offers__text{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #037E8C;
+  
+
+
+
 }

@@ -1,0 +1,82 @@
+/*<div class="tabs">
+{ <ul class="tabs__list">
+<li class="tabs__item">
+  <div class="tabs__content tabs__content_show">
+    <h4>Hello</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni magnam sequi quas tenetur ex. Numquam veritatis animi incidunt odio, est fugit quibusdam, officia excepturi libero deleniti fugiat velit corporis doloremque asperiores cumque harum illum reiciendis? Ipsam quia quam voluptatibus. Culpa.</p>
+  </div>
+</li>
+<li class="tabs__item">
+  <div class="tabs__content">
+    <h4>Noframes</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni magnam sequi quas tenetur ex. Numquam veritatis animi incidunt odio, est fugit quibusdam, officia excepturi libero deleniti fugiat velit corporis doloremque asperiores cumque harum illum reiciendis? Ipsam quia quam voluptatibus. Culpa.</p>
+  </div>
+</li>
+<li class="tabs__item">
+  <div class="tabs__content">
+    <h4>AAAAAAA</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni magnam sequi quas tenetur ex. Numquam veritatis animi incidunt odio, est fugit quibusdam, officia excepturi libero deleniti fugiat velit corporis doloremque asperiores cumque harum illum reiciendis? Ipsam quia quam voluptatibus. Culpa.</p>
+  </div>
+</li>
+</ul>
+</div> }
+*/
+
+
+
+
+
+
+
+const buttons = document.querySelectorAll(".routs__reserve"); // []
+const modal = document.querySelector(".modal");
+const close = document.querySelector(".modal__close");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.classList.add("show");
+    // document.body.classList.add("no-scroll");
+  });
+});
+
+// button.addEventListener("click", () => {
+//   modal.classList.add("show");
+//   document.body.classList.add("no-scroll");
+// });
+
+close.addEventListener("click", () => {
+  modal.classList.remove("show");
+});
+
+const tabs = document.querySelectorAll(".tabs__content");
+
+// tabs.forEach((tab) => {
+//   tab.addEventListener("click", () => {
+//     const text = tab.querySelector(".tabs__text");
+
+//     text.classList.add("tabs__content_show");
+//   });
+// });
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((item) => {
+      if (item.classList.contains("tabs__content_show")) {
+        item.classList.remove("tabs__content_show");
+      }
+    });
+
+    tab.classList.add("tabs__content_show");
+  });
+});
+
+const burger = document.querySelector(".header__burger");
+
+burger.addEventListener("click", () => {
+  document.body.classList.add("no-scroll");
+});
+
+//Здесь не нужно было юзать body
+document.addEventListener("scroll", (event) => {
+  console.log(event);
+});
