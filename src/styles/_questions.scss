@@ -22,21 +22,20 @@
   &__section {
     display: flex;
   }
-}
 
-.questions__tabs {
+ &__tabs {
   width: 50%;
 }
 
-.questions__ask {
+&__ask {
   width: 50%;
 }
 
-.questions_image {
+&_image {
   text-align: center;
 }
 
-.questions__subtitle {
+&__subtitle {
   text-align: center;
   margin-top: 26px;
   margin-bottom: 14px;
@@ -46,7 +45,7 @@
   color: #121214;
 }
 
-.questions__text {
+&__text {
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -56,7 +55,7 @@
   line-height: 17px;
 }
 
-.questions__btn {
+&__btn {
   display: block;
   margin: 0 auto;
   margin-top: 31px;
@@ -70,3 +69,5 @@
   line-height: 130%;
   color: #ffffff;
 }
+}
+

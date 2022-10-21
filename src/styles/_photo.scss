@@ -1,0 +1,23 @@
+.photo {
+    border: 2px solid green;
+
+    &__wrapper {
+        padding-bottom: 130px;
+      }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: #121214;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      
+    &__slider {
+        display: flex;
+        justify-content: space-evenly;
+      }  
+  }
+  

@@ -1,0 +1,126 @@
+.routs{
+    &__wrapper {
+        background: #f4f4f4;
+      }
+
+    &__title {
+        padding-top: 57px;
+        padding-bottom: 57px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+      }
+
+    &__section {
+        display: flex;
+
+        &_revers {
+            flex-direction: row-reverse;
+          }
+      }
+
+    &__info {
+        position: relative;
+        padding-left: 110px;
+        width: 50%;
+        padding-bottom: 57px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 0px;
+            width: 81px;
+            height: 4px;
+            background-color: rgba(3, 126, 140, 1);
+          }
+      }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 108.7%;
+      }  
+      
+    &__price {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 108.7%;
+      }  
+
+    &__description {
+        padding-top: 32px;
+      }
+      
+    &__block {
+        display: flex;
+        justify-content: start;
+        padding-bottom: 10px;
+      }
+      
+    &_slider {
+        width: 50%;
+        background-color: blue;
+      }
+      
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 108.7%;
+        text-transform: uppercase;
+        padding-left: 17px;
+      }
+      
+    &__item-value {
+        font-weight: 400; /*не применяется*/
+      }  
+
+    &__notice {
+        display: flex;
+        padding-top: 22px;
+      }
+      
+    &__text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        padding-right: 20px;
+      }
+      
+    &__plan {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        padding-top: 13px;
+      }
+      
+    &__buttons {
+        padding-top: 39px;
+        display: flex;
+      }  
+
+    &__more {
+        width: 175px;
+        height: 45px;
+        border: 1.5px solid #037e8c;
+        border-radius: 9px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        color: #037e8c;
+        margin-right: 15px;
+      }
+      
+    &__reserve {
+        width: 175px;
+        height: 45px;
+        background: #037e8c;
+        border-radius: 9px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        color: #ffffff;
+      } 
+}
+

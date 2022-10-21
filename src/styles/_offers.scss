@@ -1,0 +1,35 @@
+.offers{
+    &__title {
+        margin-top: 85px;
+        margin-bottom: 55px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 140.4%;
+        color: #121214;
+        text-align: center;
+      }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+    &__item {
+        border-radius: 9px;
+        width: calc(25% - 90px);
+      }  
+
+    &__descrip {
+        background: #8d8c8c;
+        padding: 25px;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        color: #037e8c;
+      }
+}
+

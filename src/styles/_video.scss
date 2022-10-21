@@ -1,0 +1,17 @@
+.video{
+    &__wrapper {
+        background-image: url("../images/video\ wrapper.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 82px 181px;
+      }
+
+    &_content {
+        width: 1078px;
+        height: 430px;
+        margin: 0 auto;
+        border: 7px solid #ffffff;
+        border-radius: 22px;
+      }  
+}
