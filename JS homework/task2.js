@@ -1,21 +1,20 @@
-
 /*/////////////////    TASK1 ////////////////////*/
 
 // Вы играете в скрэббл. Но считать баллы тяжело.
 
-// Вы решаете создать небольшой скрипт для расчета наилучшего 
+// Вы решаете создать небольшой скрипт для расчета наилучшего
 // возможного значения.
 
 // Функция принимает два аргумента:
 
-// `points`: массив целых чисел, представляющий 
+// `points`: массив целых чисел, представляющий
 // для каждой буквы от A до Z баллы, которые она платит.
 // `words` : массив строк в верхнем регистре
 
 // Вы должны вернуть индекс кратчайшего слова, которое дает
 // наивысший балл.
-// Если длина и оценка одинаковы для двух элементов, вернуть 
-// индекс первого. 
+// Если длина и оценка одинаковы для двух элементов, вернуть
+// индекс первого.
 // Сразу же сюда автотест сбрасываю чтоб ты понял как
 // оно работает
 
@@ -32,26 +31,30 @@
 //   });
 // });
 
+const points = [
+  1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 10, 1, 2, 1, 1, 3, 8, 1, 1, 1, 1, 4, 10, 10, 10,
+  10,
+];
+const simpleWords = ["WHO", "IS", "THE", "BEST", "OF", "US"];
+const rndmWords = [
+  "NOQ",
+  "TXAY",
+  "S",
+  "OM",
+  "ESFT",
+  "CJUKQ",
+  "QL",
+  "QO",
+  "ASTK",
+  "Y",
+];
+const firstBestWord = ["JGPCWVWFW", "JXHNKBJJG"];
 
-const points = [1,3,3,2,1,4,2,4,1,8,10,1,2,1,1,3,8,1,1,1,1,4,10,10,10,10];
-const simpleWords = ["WHO","IS","THE","BEST","OF","US"];
-const rndmWords = ["NOQ","TXAY","S","OM","ESFT","CJUKQ","QL","QO","ASTK","Y"];
-const firstBestWord = ["JGPCWVWFW","JXHNKBJJG"];
-
-function calculating(points, words){
-    simpleWords.sort((a,b) => a.length -b.length)
-
-     
+function calculating(points, words) {
+  simpleWords.sort((a, b) => a.length - b.length);
 }
 
 calculating(points, simpleWords);
-
-
-
-
-
-
-
 
 /*/////////////////    TASK2 ////////////////////*/
 
@@ -67,14 +70,21 @@ calculating(points, simpleWords);
 // input = ["red", "red", "red", "red", "red", "red"]
 // result = 3 (3 red pairs)
 
+const arr = [
+  "red",
+  "blue",
+  "red",
+  "green",
+  "blue",
+  "green",
+  "red",
+  "red",
+  "black",
+  "black",
+];
 
-
-const arr = ["red", "blue", "red", "green", "blue", "green"];
-
-const sortedArr = arr.sort((a, b) => a.toLowerCase() - b.toLowerCase());
+const sortedArr = arr.map((item) => item.toLowerCase()).sort();
 console.log(sortedArr);
-
-
 
 // arr.map((item, index, arr) =>{
 //     let result = 0;
@@ -85,5 +95,3 @@ console.log(sortedArr);
 
 //     }
 // });
-
-

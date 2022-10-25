@@ -43,3 +43,10 @@ i {
   margin: 0 auto;
   // border: 1px solid red;
 }
+
+.background-wrapper {
+  background-image: url("../images/bg-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
