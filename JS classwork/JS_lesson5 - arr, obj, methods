@@ -138,7 +138,7 @@
 // const newNumber = numberArray.sort((a, b) => a - b); //[1, 11, 16550, 5, 77, 88]
 
 // const newStr = strArray.sort(); //['Awefwef', 'Befw', 'afwef', 's']
-// поэтому небходимо использовать (a, b) => a.toLocaleLowerCase() - b.toLocaleLowerCase()
+// поэтому небходимо использовать (a, b) => a.toLowerCase() - b.toLowerCase()
 
 // const newStr = strArray.sort(
 //   (a, b) => a.toLocaleLowerCase() - b.toLocaleLowerCase()
