@@ -1,0 +1,87 @@
+.suggestion{
+    &__wrapper {
+        border: 1px solid green;
+        padding: 64px 70px 75px 70px;
+      }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        text-align: center;
+        color: #373737;
+        padding-bottom: 45px;
+      }
+      
+    &__content {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+    &__card {
+        display: flex;
+        width: calc(50% - 29px);
+        background: #f4f4f4;
+        border-radius: 9px;
+        background-image: url("../images/suggestion\ bg.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+      
+    &__item {
+        width: 50%;
+      }
+      
+    &__image {
+        border-radius: 9px;
+        width: 50%;
+        position: relative;
+        height: 100%;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+    &__text {
+        width: 50%;
+      }
+      
+    &__subtitle {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 139%;
+        color: #037e8c;
+        margin-top: 26px;
+      }
+      
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #373737;
+        margin-top: 15px;
+      }
+      
+    &__btn {
+        border: 1.5px solid #037e8c;
+        border-radius: 9px;
+        width: 175px;
+        height: 45px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        color: #037e8c;
+      }
+      
+      &__more {
+        margin-top: 20px;
+      }
+        
+}

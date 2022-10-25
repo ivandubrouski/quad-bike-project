@@ -1,0 +1,53 @@
+.conditions{
+        background-image: url("../images/bg-conditions.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &__title {
+            width: 500px;
+            height: 94px;
+            margin: 0 auto;
+          }
+
+        &__text {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 130%;
+            text-align: center;
+            color: #121214;
+            padding-top: 50px;
+            padding-bottom: 43px;
+          }
+          
+        &__group {
+            /*  */
+            justify-content: space-between;
+            /*  */
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 52px;
+          }
+          
+        &__card {
+            background-color: #ffffff;
+            border-radius: 9px;
+          
+            width: calc(33% - 60px);
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+          }
+          
+        &__icon {
+            padding-top: 9px;
+            padding-left: 5px;
+          }
+          
+        &__description {
+            padding: 9px 27px 14px 42px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+          }
+}
