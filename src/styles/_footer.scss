@@ -1,0 +1,25 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #121214;
+    border-bottom: 1px solid #121214;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 104.7%;
+    text-transform: uppercase;
+  }
+
+  &__item:hover {
+    color: rgba(3, 126, 140, 1);
+  }
+}
