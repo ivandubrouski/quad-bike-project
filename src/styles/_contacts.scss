@@ -9,11 +9,23 @@
     margin-bottom: 74px;
   }
 
-  &____write {
+  &__write {
     margin-bottom: 16px;
   }
 
   &__map {
-    width: 50%;
+    position: relative;
+    left: 82px;
+    width: 55%;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgb(23, 104, 104);
   }
 }
