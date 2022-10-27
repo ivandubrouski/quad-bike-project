@@ -1,0 +1,19 @@
+.contacts {
+  &__info {
+    width: 50%;
+    margin-left: 72px;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 74px;
+  }
+
+  &____write {
+    margin-bottom: 16px;
+  }
+
+  &__map {
+    width: 50%;
+  }
+}
