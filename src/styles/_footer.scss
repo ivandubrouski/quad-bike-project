@@ -6,13 +6,25 @@
     border-bottom: 1px solid #121214;
   }
 
+  &__logo {
+    margin-left: 183px;
+  }
+
   &__info {
     display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 38px;
   }
 
   &__item {
     margin-right: 15px;
-    color: rgba(255, 255, 255, 1);
+    color: #121214;
     font-weight: 600;
     font-size: 14px;
     line-height: 104.7%;

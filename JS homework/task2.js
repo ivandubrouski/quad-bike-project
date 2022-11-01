@@ -31,23 +31,23 @@
 //   });
 // });
 
-const points = [
-  1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 10, 1, 2, 1, 1, 3, 8, 1, 1, 1, 1, 4, 10, 10, 10,
-  10,
-];
-const simpleWords = ["WHO", "IS", "THE", "BEST", "OF", "US"];
-const rndmWords = [
-  "NOQ",
-  "TXAY",
-  "S",
-  "OM",
-  "ESFT",
-  "CJUKQ",
-  "QL",
-  "QO",
-  "ASTK",
-  "Y",
-];
+// const points = [
+//   1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 10, 1, 2, 1, 1, 3, 8, 1, 1, 1, 1, 4, 10, 10, 10,
+//   10,
+// ];
+// const simpleWords = ["WHO", "IS", "THE", "BEST", "OF", "US"];
+// const rndmWords = [
+//   "NOQ",
+//   "TXAY",
+//   "S",
+//   "OM",
+//   "ESFT",
+//   "CJUKQ",
+//   "QL",
+//   "QO",
+//   "ASTK",
+//   "Y",
+// ];
 
 // Object.fromEntries([[a, 1], [c, f]]) => {a: 1, b: .....}
 
@@ -120,15 +120,25 @@ const arr = [
   "black",
 ];
 
-const sortedArr = arr.map((item) => item.toLowerCase()).sort();
-console.log(sortedArr);
+let result = {};
+arr.forEach((item) => {
+  if (!result[item]) {
+    result[item] = 1;
+  } else {
+    result[item] += 1;
+  }
+});
+let count = 0;
+console.log(result);
 
-// arr.map((item, index, arr) =>{
-//     let result = 0;
-//     if (arr.includes(item)) {
-//         result++;
-//         continue;
-//         return `${result} pairs`;
+Object.values(result).forEach((item) => {
+  count += +(item / 2).toFixed();
+});
 
-//     }
-// });
+// for (let value of Object.values(result)) {
+//   //"red":5; //2
+//   //"black":7 //3
+//   console.log(value, (value / 2).toFixed() )
+//  count += +((value / 2).toFixed());
+// }
+console.log(count);

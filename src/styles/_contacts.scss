@@ -1,16 +1,54 @@
 .contacts {
   &__info {
     width: 50%;
-    margin-left: 72px;
+    padding-left: 72px;
+  }
+
+  &__info {
+    border-top: 3px solid #037e8c;
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140.4%;
+    color: #121214;
   }
 
   &__content {
     display: flex;
     margin-bottom: 74px;
+    margin-top: 70px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    width: 50%;
+    margin-bottom: 42px;
+  }
+
+  &__text {
+    margin-left: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    color: #121214;
   }
 
   &__write {
     margin-bottom: 16px;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 151.19%;
+    color: #121214;
   }
 
   &__map {
@@ -27,5 +65,14 @@
     height: 45px;
     border-radius: 50%;
     background-color: rgb(23, 104, 104);
+  }
+
+  &__messengers {
+    display: flex;
+    margin-right: 21px;
+  }
+
+  &__instagram {
+    margin-left: 21px;
   }
 }

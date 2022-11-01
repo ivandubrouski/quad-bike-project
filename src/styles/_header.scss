@@ -64,7 +64,11 @@
   }
 
   &__burger {
-    display: none;
+    &_item {
+      width: 25px;
+      height: 5px;
+      color: crimson;
+    }
   }
 
   .header_white {

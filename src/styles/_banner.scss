@@ -1,7 +1,7 @@
 .banner {
   &__wrapper {
     width: 50%;
-    margin-bottom: 192px;
+    padding-bottom: 192px;
   }
 
   &__title {
@@ -33,7 +33,6 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 108.7%;
-    margin-bottom: 192px;
 
     & span {
       margin-right: 32px;
