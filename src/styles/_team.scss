@@ -1,57 +1,56 @@
-.team{
-    &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 130%;
-        color: #121214;
-        padding-top: 64px;
-        padding-bottom: 33px;
-        text-align: center;
-      }
+.team {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #121214;
+    padding-top: 64px;
+    padding-bottom: 33px;
+    text-align: center;
+  }
 
-    &__group {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 64px;
-      }  
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+  }
 
-    &__name {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 130%;
-        color: #037e8c;
-        padding-top: 17px;
-        padding-left: 26px;
-      }
-      
-    &__position {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 130%;
-        color: #121214;
-        padding-bottom: 22px;
-        padding-left: 26px;
-      }  
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #037e8c;
+    padding-top: 17px;
+    padding-left: 26px;
+  }
 
-    &__member {
-      width: 20%;
-      height: 310px;
-    }
+  &__position {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #121214;
+    padding-bottom: 22px;
+    padding-left: 26px;
+  }
 
-    &__img {
-      position: relative;
+  &__member {
+    width: 20%;
+    height: 310px;
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-
-      & img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-    }  
-    
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
