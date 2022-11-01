@@ -1,42 +1,45 @@
-.help{
-    &__wrapper {
-        background: grey;
-        padding-top: 50px;
-        padding-bottom: 100px;
-      }
+.help {
+  &__wrapper {
+    background: url("../images/routes_help.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 
-    &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 130%;
-        color: #ffffff;
-        text-align: center;
-      }
-      
-    &__text {
-        text-align: center;
-        padding-top: 19px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 130%;
-        color: #ffffff;
-      }  
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #ffffff;
+    text-align: center;
+  }
 
-    &__button {
-        padding-bottom: 50px;
-        padding-top: 43px;
-      }
-      
-    &__btn {
-        width: 175px;
-        height: 45px;
-        background: #037e8c;
-        border-radius: 9px;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 130%;
-        color: #ffffff;
-        display: block;
-        margin: 0 auto;
-      }
+  &__text {
+    text-align: center;
+    padding-top: 19px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+
+  &__button {
+    padding-bottom: 50px;
+    padding-top: 43px;
+  }
+
+  &__btn {
+    width: 175px;
+    height: 45px;
+    background: #037e8c;
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+  }
 }

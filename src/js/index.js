@@ -29,3 +29,22 @@ document.addEventListener("scroll", (event) => {
     header.classList.remove("header_white");
   }
 });
+
+/************TABS*********/
+const tabs = document.querySelectorAll(".tabs__content");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((item) => {
+      if (item.classList.contains("tabs__content_show")) {
+        item.classList.remove("tabs__content_show");
+      }
+    });
+    tab.classList.add("tabs__content_show");
+  });
+});
+
+const burger = document.querySelector(".header__burger");
+burger.addEventListener("click", () => {
+  document.body.classList.add("no-scroll");
+});
