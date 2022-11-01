@@ -45,6 +45,8 @@ tabs.forEach((tab) => {
 });
 
 const burger = document.querySelector(".header__burger");
+const headerInfo = document.querySelector(".header__info");
 burger.addEventListener("click", () => {
-  document.body.classList.add("no-scroll");
+  document.body.classList.toggle("no-scroll");
+  headerInfo.classList.toggle("header__info_show");
 });

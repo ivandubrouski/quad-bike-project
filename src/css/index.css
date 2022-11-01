@@ -39,6 +39,11 @@ i {
   margin: 0;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -63,7 +68,10 @@ i {
 .header__info {
   display: flex;
 }
-.header .header__list {
+.header__logo {
+  z-index: 1;
+}
+.header__list {
   display: flex;
   margin-right: 58px;
   margin-top: 39px;
@@ -106,10 +114,10 @@ i {
   letter-spacing: 0.02em;
   border: none;
 }
-.header__burger_item {
-  width: 25px;
-  height: 5px;
-  color: crimson;
+.header__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header .header_white {
   background-color: #ffffff;
@@ -120,10 +128,38 @@ i {
 
 @media (max-width: 992px) {
   .header__info {
-    /* display: none; */
+    display: none;
   }
-  .header__burger {
+  .header__info_show {
+    position: fixed;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 18, 20);
+  }
+  .header__info_show .header__list {
+    flex-direction: column;
+  }
+  .header__info_show .header__item {
+    padding: 15px;
+    border-bottom: 1px solid white;
+  }
+  .header__logo {
+    position: relative;
+    width: 70px;
+    height: 84px;
+  }
+  .header__logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 .advantages__item {
@@ -729,11 +765,13 @@ i {
   color: #ffffff;
 }
 
-.video__wrapper {
+.video {
   background-image: url("../images/video wrapper.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.video__wrapper {
   padding: 82px 181px;
 }
 .video_content {
@@ -884,4 +922,35 @@ i {
 }
 .footer__item:hover {
   color: rgb(3, 126, 140);
+}
+
+.burger {
+  position: relative;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+}
+.burger span, .burger::before, .burger::after {
+  display: block;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+}
+.burger::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */
