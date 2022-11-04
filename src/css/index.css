@@ -133,15 +133,17 @@ button {
   .header__info_show {
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: rgb(18, 18, 20);
+    padding-top: 104px;
+    background: rgb(65, 65, 67);
   }
   .header__info_show .header__list {
     flex-direction: column;
+    padding-left: 21px;
   }
   .header__info_show .header__item {
     padding: 15px;
@@ -149,6 +151,8 @@ button {
   }
   .header__logo {
     position: relative;
+    top: 11px;
+    left: 20px;
     width: 70px;
     height: 84px;
   }
@@ -160,6 +164,40 @@ button {
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  .header__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 245.4%;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .header__contacts {
+    margin-top: 55px;
+    padding-left: 21px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 104.7%;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  .banner__wrapper {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .banner__text {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .burger {
+    margin-top: 30px;
+    margin-right: 20px;
   }
 }
 .advantages__item {
@@ -684,6 +722,91 @@ button {
   text-align: center;
   margin-bottom: 13px;
 }
+.certificate__subtitle {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #037e8c;
+  padding-top: 13px;
+}
+.certificate__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 46px;
+  margin-bottom: 40px;
+}
+.certificate__item {
+  width: calc(50% - 30px);
+  border: 1px solid red;
+}
+.certificate__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 172.5%;
+  color: #151515;
+}
+.certificate__btn {
+  width: 277px;
+  height: 45px;
+  margin-top: 45px;
+  border: 1.5px solid #037e8c;
+  border-radius: 9px;
+  color: rgb(3, 126, 140);
+}
+.certificate__block {
+  background: #373737;
+  background-image: url("../images/certificate_decotation.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+}
+.certificate__knot {
+  position: relative;
+  background-image: url("../images/certificate_knot.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 100%;
+  height: 100%;
+}
+.certificate__name {
+  padding-top: 35px;
+  margin-left: 206px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  color: #121214;
+}
+.certificate__desc {
+  display: block;
+  max-width: 35%;
+  margin-top: 50px;
+  margin-left: 124px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 124%;
+  color: #ffffff;
+}
+.certificate__info {
+  display: block;
+  margin-top: 22px;
+  margin-left: 125px;
+  margin-bottom: 59px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.certificate__image {
+  position: absolute;
+  top: 97px;
+  right: 63px;
+}
 
 .offers__title {
   text-align: center;
@@ -703,7 +826,7 @@ button {
   width: 22%;
   border-radius: 9px;
   overflow: hidden;
-  background: #696969;
+  background: rgb(244, 244, 244);
   margin-bottom: 28px;
 }
 .offers__image {
@@ -796,7 +919,7 @@ button {
 .tabs__content::after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 21px;
   right: 19px;
   width: 10px;
   height: 10px;
@@ -905,10 +1028,10 @@ button {
 .footer__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__list {
   display: flex;
-  align-items: center;
   margin-top: 35px;
   margin-bottom: 38px;
 }
