@@ -17,9 +17,9 @@
 @import "./contacts";
 @import "./footer";
 @import "./burger";
+@import "./slider";
 
-// main,
-// .banner,
-// .footer {
-//   display: none;
-// }
+main,
+.footer {
+  display: none;
+}
