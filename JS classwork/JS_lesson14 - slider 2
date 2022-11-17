@@ -1,0 +1,114 @@
+/******************* SLIDER 2 with bullets*************/
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 650px;
+  padding: 50px;
+
+  &__counter {
+    display: flex;
+    align-content: center;
+    width: 280px;
+    font-size: 40px;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
+  }
+
+  &__prev {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__next {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 100px black;
+  }
+
+  &__inner {
+    display: flex;
+    transition: all 0.5s linear;
+  }
+
+  &__slide {
+    width: 100%;
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__bullets {
+    display: flex;
+  }
+
+  &__bullet {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: aqua;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/************************/
+/* 
+<div class="slider">
+<div class="slider__counter">
+  <div class="slider__prev">
+    <img src="./src/images/circle.svg" alt="">
+  </div>
+  <div class="slider__numbers">
+    <span class="slider__current">01</span>
+  /
+  <span class="slider__total">04</span>
+  </div>
+  <div class="slider__next">
+    <img src="./src/images/circle.svg" alt="">
+  </div>
+</div>
+<div class="slider__wrapper">
+  <div class="slider__inner">
+    <div class="slider__slide">
+      <img src="./src/images/complexity.svg" alt="ewfwef">
+    </div>
+    <div class="slider__slide">
+      <img src="./src/images/bg-conditions.png" alt="fwfew">
+    </div>
+    <div class="slider__slide">
+      <img src="./src/images/contacts_city.svg" alt="">
+    </div>
+    <div class="slider__slide">
+      <img src="./src/images/bg-image.png" alt="">
+    </div>
+  </div>
+</div>  
+<div class="slider__bullets">
+  <div class="slider__bullet" data-number="1"></div>
+  <div class="slider__bullet" data-number="2"></div>
+  <div class="slider__bullet" data-number="3"></div>
+  <div class="slider__bullet" data-number="4"></div>
+</div>
+</div> */

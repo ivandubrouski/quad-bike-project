@@ -1,4 +1,6 @@
 .banner {
+  position: relative;
+
   &__wrapper {
     width: 50%;
     padding-bottom: 192px;
@@ -54,5 +56,21 @@
       font-size: 16px;
       line-height: 130%;
     }
+  }
+}
+
+@media (max-width: 360px) {
+  .banner &__wrapper {
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 123.5%;
+    letter-spacing: 0.03em;
+  }
+
+  &__text {
+    padding-left: 33px;
   }
 }
