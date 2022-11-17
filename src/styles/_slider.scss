@@ -1,30 +1,40 @@
 .slider {
-  position: fixed;
+  position: absolute;
+  top: 20%;
+  right: 50px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: flex-start;
 
-  &__current::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 50%;
-    margin-bottom: 15px;
+  &__bullets {
+    display: flex;
+    flex-direction: column;
   }
 
-  &__current {
+  &__bullet {
     width: 8px;
     height: 8px;
-    background-color: #fff;
+    margin-top: 15px;
+    background: #ffffff;
     border-radius: 50%;
   }
 
-  &__current::after {
-    content: "";
-    width: 8px;
-    height: 8px;
+  &__line {
+    width: 54px;
+    height: 2px;
+    margin-left: 22px;
+    margin-right: 14px;
     background-color: #fff;
-    border-radius: 50%;
+    rotate: 90deg;
+  }
+
+  &__text {
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    rotate: 90deg;
   }
 }

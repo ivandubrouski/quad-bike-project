@@ -1,0 +1,102 @@
+/************SLIDER1*********/
+
+let slideIndex = 1;
+
+const slides = document.querySelectorAll(".slider__slide"),
+  prev = document.querySelector(".slider__prev"),
+  next = document.querySelector(".slider__next"),
+  total = document.querySelector(".slider__total"),
+  current = document.querySelector(".slider__current");
+
+total.textContent = slides.length;
+
+showSlides(1);
+
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  slides.forEach((slide) => (slide.style.display = "none"));
+
+  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.animationName = "fade";
+  slides[slideIndex - 1].style.animationDuration = "1s";
+
+  if (slideIndex < 10) {
+    current.textContent = `0${slideIndex}`;
+  } else {
+    current.textContent = slideIndex;
+  }
+}
+
+next.addEventListener("click", () => {
+  showSlides((slideIndex += 1));
+});
+
+prev.addEventListener("click", () => {
+  showSlides((slideIndex -= 1));
+});
+
+/*
+
+<!-- <div class="slider">
+      <div class="slider__counter">
+        <div class="slider__prev">
+          <img src="./src/images/circle.svg" alt="">
+        </div>
+        <div class="slider__numbers">
+          <span class="slider__current">01</span>
+        /
+        <span class="slider__total">04</span>
+        </div>
+        <div class="slider__next">
+          <img src="./src/images/circle.svg" alt="">
+        </div>
+      </div>
+      <div class="slider__wrapper">
+        <div class="slider__slide">
+          <img src="./src/images/complexity.svg" alt="ewfwef">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/bg-conditions.png" alt="fwfew">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/contacts_city.svg" alt="">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/bg-image.png" alt="">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/complexity.svg" alt="ewfwef">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/bg-conditions.png" alt="fwfew">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/contacts_city.svg" alt="">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/bg-image.png" alt="">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/complexity.svg" alt="ewfwef">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/bg-conditions.png" alt="fwfew">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/contacts_city.svg" alt="">
+        </div>
+        <div class="slider__slide">
+          <img src="./src/images/bg-image.png" alt="">
+        </div>
+      </div>  
+    </div> -->
+
+
+*/
