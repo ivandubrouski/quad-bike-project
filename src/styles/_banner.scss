@@ -1,5 +1,7 @@
 .banner {
+  // в промежутке с 993 до бесконечности
   position: relative;
+  min-height: 900px;
 
   &__wrapper {
     width: 50%;
@@ -43,8 +45,21 @@
   }
 }
 
-@media (max-width: 992px) {
+//     padding-left: 10%;
+
+@media (max-width: 1350px) {
   .banner {
+    &__wrapper {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  // в промежутке с 541 по 992
+  .banner {
+    min-height: 500px;
+
     &__wrapper {
       width: 85%;
       margin: 0 auto;
@@ -56,21 +71,12 @@
       font-size: 16px;
       line-height: 130%;
     }
-  }
-}
 
-@media (max-width: 360px) {
-  .banner &__wrapper {
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 123.5%;
-    letter-spacing: 0.03em;
-  }
-
-  &__text {
-    padding-left: 33px;
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 123.5%;
+      letter-spacing: 0.03em;
+    }
   }
 }

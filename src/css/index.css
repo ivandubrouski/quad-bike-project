@@ -46,8 +46,19 @@ button {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1330px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 1350px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0;
+  }
 }
 
 .background-wrapper {
@@ -840,6 +851,7 @@ button {
 
 .banner {
   position: relative;
+  min-height: 900px;
 }
 .banner__wrapper {
   width: 50%;
@@ -878,7 +890,15 @@ button {
   color: #ffffff;
 }
 
+@media (max-width: 1350px) {
+  .banner__wrapper {
+    width: 70%;
+  }
+}
 @media (max-width: 992px) {
+  .banner {
+    min-height: 500px;
+  }
   .banner__wrapper {
     width: 85%;
     margin: 0 auto;
@@ -888,6 +908,12 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
+  }
+  .banner__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 123.5%;
+    letter-spacing: 0.03em;
   }
 }
 .video {
@@ -1081,39 +1107,61 @@ button {
     margin-right: 20px;
   }
 }
-.slider {
+.pagination {
   position: absolute;
   top: 20%;
   right: 50px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  width: 150px;
 }
-.slider__bullets {
+.pagination__bullets {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
 }
-.slider__bullet {
+.pagination__bullet {
   width: 8px;
   height: 8px;
-  margin-top: 15px;
   background: #ffffff;
   border-radius: 50%;
 }
-.slider__line {
-  width: 54px;
-  height: 2px;
-  margin-left: 22px;
-  margin-right: 14px;
-  background-color: #fff;
-  rotate: 90deg;
-}
-.slider__text {
+.pagination__text {
+  position: relative;
+  display: block;
   font-family: "Futura PT";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
-  rotate: 90deg;
+}
+.pagination__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 44px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+.pagination_rotate {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+  .pagination {
+    top: 15%;
+    right: -40px;
+  }
+}
+main,
+.footer {
+  display: none;
+}
+
+.slede-item {
+  height: 400px !important;
+  background-color: aqua;
 }/*# sourceMappingURL=index.css.map */

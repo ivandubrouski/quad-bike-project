@@ -19,3 +19,13 @@
 @import "./burger";
 @import "./slider";
 // @import "./slider_2";
+
+main,
+.footer {
+  display: none;
+}
+
+.slede-item {
+  height: 400px !important;
+  background-color: aqua;
+}

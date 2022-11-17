@@ -1,40 +1,54 @@
-.slider {
+.pagination {
   position: absolute;
   top: 20%;
   right: 50px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  width: 150px;
 
   &__bullets {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
   }
 
   &__bullet {
     width: 8px;
     height: 8px;
-    margin-top: 15px;
     background: #ffffff;
     border-radius: 50%;
   }
 
-  &__line {
-    width: 54px;
-    height: 2px;
-    margin-left: 22px;
-    margin-right: 14px;
-    background-color: #fff;
-    rotate: 90deg;
-  }
-
   &__text {
+    position: relative;
+    display: block;
     font-family: "Futura PT";
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
-    rotate: 90deg;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      width: 44px;
+      height: 2px;
+      background-color: #fff;
+      transform: translateY(-50%);
+    }
+  }
+
+  &_rotate {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .pagination {
+    top: 15%;
+    right: -40px;
   }
 }

@@ -9,13 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="./src/css/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="src/styles/index.css" /> -->
     <title>Квадроциклы</title>
   </head>
   <body>
 
    
-
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slede-item">
+          <img src="./src/images/contacts_instagram.svg" alt="">
+        </div>
+        <div class="swiper-slide slede-item">
+          <img src="./src/images/circle.svg" alt="">
+        </div>
+        <div class="swiper-slide slede-item">
+          <img src="./src/images/condition icon.svg" alt="">
+        </div>
+        <div class="swiper-slide slede-item">
+          <img src="./src/images/contacts_instagram.svg" alt="">
+        </div>
+        <div class="swiper-slide slede-item">
+          <img src="./src/images/circle.svg" alt="">
+        </div>
+        <div class="swiper-slide slede-item">
+          <img src="./src/images/condition icon.svg" alt="">
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
  
     <div class="background-wrapper">
       <header class="header">
@@ -63,15 +99,13 @@
           <div class="banner__wrapper">
 
 
-            <div class="slider">
-              
-              <div class="slider__bullets">
-                <div class="slider__bullet" data-number="1"></div>
-                <div class="slider__bullet" data-number="2"></div>
-                <div class="slider__bullet" data-number="3"></div>
+            <div class="pagination pagination_rotate">
+              <div class="pagination__bullets">
+                <div class="pagination__bullet" data-number="1"></div>
+                <div class="pagination__bullet" data-number="2"></div>
+                <div class="pagination__bullet" data-number="3"></div>
               </div>
-              <span class="slider__line"></span>
-              <span class="slider__text">scroll</span>
+              <span class="pagination__text">scroll</span>
            </div>
 
 
@@ -727,6 +761,7 @@
       </div>
     </div>
 
-   <script src="src/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="src/js/index.js" type="module"></script>
   </body>
 </html>
